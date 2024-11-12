@@ -1,4 +1,7 @@
 # dashboard
+#Live Link
+
+https://ayaashreey.github.io/simple-Dashboard-vue/#/
 
 ## Project setup
 ```
