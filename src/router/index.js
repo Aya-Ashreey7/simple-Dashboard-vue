@@ -1,13 +1,11 @@
-import { createRouter, createWebHistory } from "vue-router";
+import { createRouter, createWebHashHistory } from "vue-router";
 import dashboardPage from "@/pages/master/dashboardPage.vue";
 import homePage from "@/pages/homePage.vue";
 import profilePage from "@/pages/profilePage.vue";
 import messagesPage from "@/pages/messagesPage.vue";
 import settingPage from "@/pages/settingPage.vue";
 import downloadPage from "@/pages/downloadPage.vue";
-
-
-
+import TailwindPage from "@/pages/TailwindPage.vue";
 
 const routes = [
     {
@@ -42,13 +40,18 @@ const routes = [
             },
         ]
     },
+    {
+        path: "/TailwindPage",
+        name: "TailwindPage",
+        component: TailwindPage,
+    }
 
 ];
 const router = Router();
 export default router;
 function Router() {
     const router = new createRouter({
-        history: createWebHistory(),
+        history: createWebHashHistory(),
         routes,
     });
     return router;
